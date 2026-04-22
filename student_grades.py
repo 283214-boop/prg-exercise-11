@@ -24,10 +24,14 @@ class StudentsGrades:
             x >= 0
             return "F"
 
-    def find(self,scores):
+    def find(self,score):
         x=[]
-       for index,x in enumerate(self.scores)
-           if x== scores:
+        for i in range(len(self.scores)):
+           if self.scores[i] == score:
+               x.append(i)
+        return x
+
+    def get_sorted()
 
 
 

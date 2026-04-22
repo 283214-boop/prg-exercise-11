@@ -22,15 +22,11 @@ def bubble_sort(values):
     plt.ion()
     plt.show()
     for j in range(len(values)):
-        swapped = False
 
         for n in range(len(values)-1):
 
             if values[n] > values[n+1]:
                 values[n], values[n+1] = values[n+1], values[n]
-                swapped=True
-            if swapped == False:
-                break
             index_highlight1 = n
             index_highlight2 = n + 1
             colors = ["steelblue"] * len(values)
