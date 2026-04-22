@@ -16,15 +16,16 @@ def selection_sort(values):
         print(values)
         values[n], values[min_index] = values[min_index], values[n]
         n+=1
-    print(values)
+    return values
 
 def bubble_sort(values):
-    n = len(values)-1
-    for i in range(len(values)):
-        index=i
-        if values[index]>values[index+n]:
-           values[n], values[index] = values[index+n], values[n]
-    print (values)
+    for j in range(len(values)):
+
+        for n in range(len(values)-1):
+
+            if values[n] > values[n+1]:
+                values[n], values[n+1] = values[n+1], values[n]
+        print(values)
 
 
 
@@ -33,8 +34,8 @@ def bubble_sort(values):
 
 if __name__=="__main__":
     values = random_numbers(10)
-    # print(values)
+    print(values)
     small = random_numbers(5, low=0, high=20)
     # print(small)
-    selection_sort(values)
+    # selection_sort(values)
     bubble_sort(values)
